@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LCL -- banque et assurance</title>
+</head>
+
+<body id="basic">
+    <!-- Header -->
+    <header class="header d-flex align-items-center">
+        <section class="header-section">
+            <a href="https://www.lcl.fr/">
+                <img src="./assets/Lcl_logo.png" class="logo mx-5" alt="logo entreprise" />
+            </a>
+        </section>
+        <section class="header-section">
+            <div>M <b>Metoux danielle</b></div>
+            <div>Dernière connexion le 28/10/2025 à 14:56</div>
+            <div>(Heure valable en France métropolitaine)</div>
+            <a href="#">deconnexion</a>
+        </section>
+        <section class="header-section d-flex">
+            <div class="section-box d-flex flex-column">
+                <i class="fa-solid fa-user fa-2xl my-3"></i>
+                Votre espace personnel
+            </div>
+            <div class="divider"></div>
+            <div class="section-box d-flex flex-column">
+                <h3>0.00€</h3>
+                Gains en cours
+            </div>
+            <div class="divider"></div>
+            <div class="section-box d-flex flex-column">
+                <i class="fa-solid fa-envelope fa-2xl my-3"></i>
+                Votre Messagerie
+            </div>
+        </section>
+        <section class="header-section">
+            <div class="nav">
+                <div class="d-flex justify-content-start align-items-center p-2">
+                    <i class="fa-solid fa-comments fa-2xl me-2"></i>
+                    <div>
+                        <label for="msg">Votre conseiller</label>
+                        <input type="text" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="after_header"></div>
+
+    <!-- Nav bar -->
+    <nav class="nav d-flex align-items-center justify-content-center">
+        <div class="nav-section">
+            <i class="fa-solid fa-home fa-lg"></i>
+        </div>
+        <div class="nav-section">VOS COMPTES ET PRODUITS</div>
+        <div class="nav-section">OPERATIONS COURANTES</div>
+        <div class="nav-section">S'INFORMER OU S'INSCRIRE</div>
+        <div class="nav-section">
+            <input type="text" placeholder="Rechercher" style="border-color: #5bb8dd" />
+            <button style="background-color: #5bb8dd; border: none" class="p-1">
+                <i class="fa-solid fa-magnifying-glass fa-lg text-white"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main">
+        <div class="bg-white p-4 container d-flex flex-column">
+            <div class="border border-danger text-danger p-3 d-flex row">
+                <div class="col-10 d-flex">
+                    <div>
+                        <i class="fa-solid fa-triangle-exclamation fa-2xl"></i>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Compte bloqué</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">Reste à payer : <b>3000 €</b></div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 d-flex flex-column">
+                    <div class="align-self-end my-4">
+                        <h5 style="color: orange">
+                            <i class="fa-solid fa-file-circle-question"></i> Besoin d'aide
+                            <i class="fa-solid fa-caret-right"></i>
+                        </h5>
+                        <button class="btn text-white" style="background-color: #272e80;">
+                            Tous vos comptes et livrets <i class="fa-solid fa-circle-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="border p-3">
+                        <span class="fs-4">Solde du compte <i class="fa-solid fa-triangle-exclamation text-danger"></i> :</span> <br>
+                        <b class="text-danger">74.580.000 €</b>
+
+                        <div class="mt-5">
+                            <span class="p-1 bg-info text-white">Dernières opérations</span>
+                            <div class="mt-3">
+                                17/10/2025 -- <span class="text-success">+ 12.000 €</span><br>
+                                Nouveau solde : 74.580.000 €
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="nav p-2 d-flex align-items-center">
+                        <div class="icon-circle">
+                            <div><i class="fa-regular fa-calendar-days"></i></div>
+                        </div>
+                        Espace RDV
+                    </div>
+                    <div class="nav p-2 d-flex align-items-center">
+                        <div class="icon-circle">
+                            <div><i class="fa-solid fa-euro-sign"></i></div>
+                        </div>
+                        <div>
+                            Faire un virement
+                        </div>
+                    </div>
+                    <div class="nav p-2 d-flex align-items-center">
+                        <div class="icon-circle">
+                            <div><i class="fa-solid fa-file-lines"></i></div>
+                        </div>
+                        <div>Imprimer un RIB</div>
+                    </div>
+                    <div class="nav p-2 d-flex align-items-center">
+                        <div class="icon-circle">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                        </div>
+                        <div>Souscrire en ligne</div>
+                    </div>
+                    <div class="nav p-2 d-flex align-items-center">
+                        <div class="icon-circle">
+                            <div><i class="fa-solid fa-file-lines"></i></div>
+                        </div>
+                        <div>Acceder à votre espace banque</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
